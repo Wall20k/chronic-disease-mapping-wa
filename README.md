@@ -1,4 +1,4 @@
-# Chronic Disease & Community Health Mapping — Washington State
+h# Chronic Disease & Community Health Mapping — Washington State
 
 **Author:** Waleed Al-Adawi · **Year:** 2024 · **Stack:** R (Shiny + Leaflet + sf) · Python (pandas + matplotlib + seaborn) · **Data:** CDC PLACES 2024
 
@@ -50,7 +50,7 @@ A 2x2 panel showing the four most policy-relevant relationships at tract level: 
 
 ![County Ranking](outputs/fig3_county_diabetes_ranking.png)
 
-A horizontal bar chart of the top 15 counties by mean diabetes prevalence (averaged across tracts within each county). Yakima County leads at approximately 14.2%, highlighted in burnt orange, followed by Adams, Franklin, and Grant counties — all in central/eastern Washington. King County (Seattle metro) appears near the bottom with roughly 9%. This county-level view complements the tract-level map by showing which jurisdictions carry the highest aggregate chronic disease burden and would benefit most from targeted public health investment.
+A horizontal bar chart of the top 15 counties by mean diabetes prevalence (averaged across tracts within each county). Ferry County leads at 15.6%, followed by Pacific (15.0%) and Okanogan (14.4%). Yakima County (12.9%), highlighted in burnt orange as the capstone focus area, ranks sixth — all in central/eastern Washington. King County (Seattle metro) appears near the bottom with roughly 9%. This county-level view complements the tract-level map by showing which jurisdictions carry the highest aggregate chronic disease burden and would benefit most from targeted public health investment.
 
 ### Fig 4 — Distribution of Key Health Outcomes
 
