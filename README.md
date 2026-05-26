@@ -1,4 +1,4 @@
-h# Chronic Disease & Community Health Mapping — Washington State
+# Chronic Disease & Community Health Mapping — Washington State
 
 **Author:** Waleed Al-Adawi · **Year:** 2024 · **Stack:** R (Shiny + Leaflet + sf) · Python (pandas + matplotlib + seaborn) · **Data:** CDC PLACES 2024
 
@@ -24,7 +24,7 @@ This work was completed as part of a capstone project (DATA 424) through the CHO
 
 3. **Physical inactivity and diabetes co-occur strongly** (r = 0.78), reinforcing that sedentary-behavior tracts face compounding chronic disease burden beyond obesity alone.
 
-4. **Smoking and coronary heart disease maintain a moderate positive association** (r = 0.73), aligning with decades of epidemiological literature and confirming the pattern holds at the sub-county geographic scale.
+4. **Smoking and obesity are strongly associated** (r = 0.83), with tracts that have high smoking rates almost invariably showing elevated obesity, reinforcing the behavioral clustering pattern at the sub-county geographic scale.
 
 5. **High-burden tracts concentrate in central and eastern Washington** — Yakima, Grant, Franklin, Adams, and Okanogan counties contain the largest shares of tracts where diabetes, obesity, and inactivity simultaneously exceed statewide medians.
 
@@ -44,7 +44,7 @@ A lower-triangle heatmap showing Pearson correlations among all seven selected h
 
 ![Scatterplot Grid](outputs/fig2_scatterplot_grid.png)
 
-A 2x2 panel showing the four most policy-relevant relationships at tract level: physical inactivity vs. obesity (r = 0.81), high blood pressure vs. diabetes (r = 0.88), lack of insurance vs. diabetes (r = 0.60), and smoking vs. coronary heart disease (r = 0.73). Each panel includes a fitted regression line and the Pearson r annotation. Points are semi-transparent to reveal density clustering — the tight linear bands in the BP-diabetes and inactivity-obesity panels confirm these are not driven by outliers but represent consistent population-level gradients across Washington communities.
+A 2x2 panel showing the four most policy-relevant relationships at tract level: physical inactivity vs. obesity (r = 0.81), high blood pressure vs. diabetes (r = 0.88), obesity vs. diabetes (r = 0.73), and smoking vs. high blood pressure (r = 0.50). Each panel includes a fitted regression line and the Pearson r annotation. Points are semi-transparent to reveal density clustering — the tight linear bands in the BP-diabetes and inactivity-obesity panels confirm these are not driven by outliers but represent consistent population-level gradients across Washington communities.
 
 ### Fig 3 — County Diabetes Prevalence Ranking
 
