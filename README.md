@@ -68,7 +68,7 @@ Before diving into relationships, it is important to understand the baseline dis
 | High Blood Pressure | 29.6% | 5.6 | 8.9% | 47.4% |
 | Smoking | 11.4% | 3.6 | 3.5% | 25.6% |
 | Physical Inactivity | 18.2% | 5.4 | 6.9% | 43.2% |
-| Routine Checkups | 69.1% | 3.4 | 51.4% | 81.5% |
+| Routine Checkups | 69.1% | 3.3 | 51.4% | 81.5% |
 | Lack of Insurance | 8.1% | 4.5 | 2.8% | 38.6% |
 
 Key takeaway: there is substantial variation across tracts. For example, diabetes prevalence ranges from 1.6% to 17.1% — a tenfold difference within the same state. This confirms that statewide averages mask significant local disparities, which is exactly why census-tract-level analysis matters.
@@ -126,7 +126,7 @@ The geographic pattern is striking: a clear east-west divide, with higher chroni
 
 The data tells a consistent story across every analysis method used:
 
-**Chronic diseases do not occur in isolation.** Diabetes, obesity, and high blood pressure are tightly correlated at the census-tract level (all pairwise r > 0.70). A community struggling with one of these conditions is very likely struggling with all three.
+**Chronic diseases do not occur in isolation.** Diabetes and high blood pressure are strongly correlated (r = 0.88), and diabetes and obesity are also closely linked (r = 0.73). A community struggling with one of these conditions is very likely struggling with all three.
 
 **Unhealthy behaviors cluster in the same communities.** Smoking and physical inactivity are strongly correlated (r = 0.87), and both predict the presence of chronic disease outcomes. This means prevention efforts targeting just one behavior may have ripple effects on others.
 
