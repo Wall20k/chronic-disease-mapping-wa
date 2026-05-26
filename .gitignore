@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.venv/
+venv/
+
+# R / Shiny
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+rsconnect/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Data (large files tracked separately)
+# data/places_wa_clean.csv
+
