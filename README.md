@@ -89,11 +89,11 @@ To determine which variables are most closely linked, a Pearson correlation matr
 
 The five strongest correlations are:
 
-1. **High blood pressure ↔ Diabetes** (r = 0.88) — The strongest relationship in the dataset. Tracts where blood pressure is high almost always have elevated diabetes as well.
-2. **Smoking ↔ Physical inactivity** (r = 0.87) — Unhealthy behaviors cluster together. Where smoking rates are high, physical inactivity tends to be high too.
+1. **Smoking ↔ Physical inactivity** (r = 0.87) — The strongest relationship in the dataset. Unhealthy behaviors cluster together — where smoking rates are high, physical inactivity tends to be high too.
+2. **High blood pressure ↔ Diabetes** (r = 0.83) — Tracts where blood pressure is high almost always have elevated diabetes as well.
 3. **Obesity ↔ Smoking** (r = 0.83) — Another behavior-outcome link showing that lifestyle risk factors reinforce each other geographically.
-4. **Physical inactivity ↔ Lack of insurance** (r = 0.81) — Access barriers and health behaviors are intertwined. Communities with less insurance coverage also tend to have higher inactivity.
-5. **Obesity ↔ Physical inactivity** (r = 0.81) — The most intuitive pairing: where people are less active, obesity prevalence is higher.
+4. **Obesity ↔ Physical inactivity** (r = 0.81) — The most intuitive pairing: where people are less active, obesity prevalence is higher.
+5. **Physical inactivity ↔ Lack of insurance** (r = 0.80) — Access barriers and health behaviors are intertwined. Communities with less insurance coverage also tend to have higher inactivity.
 
 ### Key Relationships Visualized
 
@@ -109,9 +109,9 @@ These plots reveal that the relationships are not just statistically significant
 Aggregating tract-level data to the county level reveals which regions carry the highest chronic disease burden.
 
 ![County Diabetes Ranking](outputs/fig3_county_diabetes_ranking.png)
-*Figure 4 — Top 15 Washington counties ranked by average diabetes prevalence. Ferry County leads at 15.6%, nearly double the statewide average. The highlighted bar marks the highest-prevalence county.*
+*Figure 4 — Top 15 Washington counties ranked by average diabetes prevalence. Ferry County leads at 15.7%, well above the statewide average. The highlighted bar marks the highest-prevalence county.*
 
-The top five counties by average diabetes prevalence are Ferry (15.6%), Pacific (15.0%), Okanogan (14.4%), Wahkiakum (13.8%), and Garfield (13.2%). At the other end, King County has the lowest average at 7.4%, followed by Whitman at 8.0%. The highest-prevalence counties are all rural counties in eastern and coastal Washington — areas that typically have fewer healthcare facilities, lower incomes, and older populations.
+The top five counties by average diabetes prevalence are Ferry (15.7%), Pacific (15.5%), Okanogan (14.9%), Wahkiakum (14.6%), and Garfield (14.0%). At the other end, King County has the lowest average at 8.2%, followed by San Juan at 8.6%. The highest-prevalence counties are all rural counties in eastern and coastal Washington — areas that typically have fewer healthcare facilities, lower incomes, and older populations.
 
 ### Geographic Map
 
@@ -126,11 +126,11 @@ The geographic pattern is striking: a clear east-west divide, with higher chroni
 
 The data tells a consistent story across every analysis method used:
 
-**Chronic diseases do not occur in isolation.** Diabetes and high blood pressure are strongly correlated (r = 0.88), and diabetes and obesity are also closely linked (r = 0.73). A community struggling with one of these conditions is very likely struggling with all three.
+**Chronic diseases do not occur in isolation.** Diabetes and high blood pressure are strongly correlated (r = 0.83), and diabetes and obesity are also closely linked (r = 0.67). A community struggling with one of these conditions is very likely struggling with all three.
 
 **Unhealthy behaviors cluster in the same communities.** Smoking and physical inactivity are strongly correlated (r = 0.87), and both predict the presence of chronic disease outcomes. This means prevention efforts targeting just one behavior may have ripple effects on others.
 
-**Access barriers amplify the problem.** Lack of health insurance is correlated with physical inactivity (r = 0.81), which in turn predicts obesity and diabetes. Communities without insurance access are not just uninsured — they are also less likely to be physically active and more likely to have chronic conditions.
+**Access barriers amplify the problem.** Lack of health insurance is correlated with physical inactivity (r = 0.80), which in turn predicts obesity and diabetes. Communities without insurance access are not just uninsured — they are also less likely to be physically active and more likely to have chronic conditions.
 
 **Geography matters.** Rural eastern Washington and coastal counties consistently show higher prevalence across nearly every indicator. This is not random; it reflects structural factors like distance to healthcare, economic conditions, and demographic composition.
 
@@ -142,7 +142,7 @@ The project set out to help CHORDS Lab build a tool for exploring chronic diseas
 
 The CDC PLACES dataset uses small-area estimation (multilevel regression and poststratification, or MRP) to generate tract-level estimates from survey data that was never designed for that geographic resolution. A natural concern is whether these modeled estimates reflect real patterns or are artifacts of the statistical method.
 
-The analysis provides several points of validation. The correlations between variables match what clinical and epidemiological literature would predict: physical inactivity strongly predicts obesity (r = 0.81), which in turn predicts diabetes (r = 0.73) and high blood pressure (r = 0.88 for BP-diabetes). If the model were producing noise, these biologically plausible relationships would not emerge so cleanly at the tract level. Additionally, the geographic clustering (rural east vs. urban west) aligns with known patterns from the Behavioral Risk Factor Surveillance System (BRFSS) and county-level health rankings. The PLACES estimates appear to be a reliable tool for the kind of exploratory analysis CHORDS Lab intends to support.
+The analysis provides several points of validation. The correlations between variables match what clinical and epidemiological literature would predict: physical inactivity strongly predicts obesity (r = 0.81), which in turn predicts diabetes (r = 0.67) and high blood pressure (r = 0.83 for BP-diabetes). If the model were producing noise, these biologically plausible relationships would not emerge so cleanly at the tract level. Additionally, the geographic clustering (rural east vs. urban west) aligns with known patterns from the Behavioral Risk Factor Surveillance System (BRFSS) and county-level health rankings. The PLACES estimates appear to be a reliable tool for the kind of exploratory analysis CHORDS Lab intends to support.
 
 ### Recommendations
 
@@ -154,7 +154,7 @@ Based on the findings, the following actions are recommended for public health p
 
 3. **Address behavior clusters, not individual behaviors.** Smoking and physical inactivity are so strongly correlated (r = 0.87) that programs addressing one should incorporate the other. A physical activity program in a high-smoking community, for example, may have compounding benefits.
 
-4. **Expand insurance access in high-risk areas.** The strong correlation between lack of insurance and physical inactivity (r = 0.81) suggests that improving access to coverage could have downstream effects on health behaviors and outcomes.
+4. **Expand insurance access in high-risk areas.** The strong correlation between lack of insurance and physical inactivity (r = 0.80) suggests that improving access to coverage could have downstream effects on health behaviors and outcomes.
 
 5. **Use tract-level data for resource allocation.** County-level averages mask enormous within-county variation. The interactive Shiny map and this dataset give decision-makers the resolution they need to allocate resources precisely.
 
@@ -165,9 +165,9 @@ Based on the findings, the following actions are recommended for public health p
 This project was completed as part of the DATA 424 Senior Capstone course at Washington State University, in collaboration with CHORDS Lab. The team members who contributed to the data exploration, analysis, and development of the interactive mapping tool are:
 
 - **Waleed Adawi** — Data analysis, Python EDA pipeline, portfolio documentation
-- **Caleb Graves** — Shiny app development, geospatial mapping
-- **Maxwell Yenney** — Data cleaning, variable selection
-- **Audrey Kimball** — Presentation, stakeholder communication
+- **Team Member 2** — Shiny app development, geospatial mapping
+- **Team Member 3** — Data cleaning, variable selection
+- **Team Member 4** — Presentation, stakeholder communication
 
 *Faculty Advisor:* CHORDS Lab, Washington State University
 
