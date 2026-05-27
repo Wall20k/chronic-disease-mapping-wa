@@ -165,9 +165,9 @@ Based on the findings, the following actions are recommended for public health p
 This project was completed as part of the DATA 424 Senior Capstone course at Washington State University, in collaboration with CHORDS Lab. The team members who contributed to the data exploration, analysis, and development of the interactive mapping tool are:
 
 - **Waleed Adawi** — Data analysis, Python EDA pipeline, portfolio documentation
-- **Team Member 2** — Shiny app development, geospatial mapping
-- **Team Member 3** — Data cleaning, variable selection
-- **Team Member 4** — Presentation, stakeholder communication
+- **Caleb Graves** — Shiny app development, geospatial mapping
+- **Maxwell Yenney** — Data cleaning, variable selection
+- **Audrey Kimball** — Presentation, stakeholder communication
 
 *Faculty Advisor:* CHORDS Lab, Washington State University
 
