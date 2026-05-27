@@ -2,7 +2,7 @@
 Chronic Disease Mapping — Washington State Census Tracts
 =========================================================
 Exploratory data analysis of CDC PLACES 2024 data for ~1,770
-Washington State census tracts.  Produces scatterplots, a
+Washington State census tracts. Produces scatterplots, a
 correlation matrix, county-level bar charts, and distribution
 histograms — all saved to outputs/.
 
@@ -80,10 +80,10 @@ print("  ✓ fig1_correlation_matrix.png")
 
 # ── Fig 2 — Scatterplot grid (4 key relationships) ──────────
 pairs = [
-    ("lpa_crude_prev",      "obesity_crude_prev",   "Physical Inactivity vs Obesity"),
-    ("bphigh_crude_prev",   "diabetes_crude_prev",  "High Blood Pressure vs Diabetes"),
-    ("obesity_crude_prev",  "diabetes_crude_prev",  "Obesity vs Diabetes"),
-    ("csmoking_crude_prev", "bphigh_crude_prev",    "Smoking vs High Blood Pressure"),
+    ("lpa_crude_prev",    "obesity_crude_prev",  "Physical Inactivity vs Obesity"),
+    ("bphigh_crude_prev", "diabetes_crude_prev", "High Blood Pressure vs Diabetes"),
+    ("obesity_crude_prev","diabetes_crude_prev",  "Obesity vs Diabetes"),
+    ("csmoking_crude_prev","bphigh_crude_prev",  "Smoking vs High Blood Pressure"),
 ]
 
 fig, axes = plt.subplots(2, 2, figsize=(12, 10))
@@ -157,4 +157,4 @@ corr.to_csv(os.path.join(OUT, "correlation_matrix.csv"))
 print("  ✓ county_averages.csv")
 print("  ✓ correlation_matrix.csv")
 
-print("\n✅  All outputs saved to outputs/")
+print("\n✅ All outputs saved to outputs/")
