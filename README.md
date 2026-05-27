@@ -198,4 +198,4 @@ chronic-disease-mapping-wa/
 
 ---
 
-*© 2025 Waleed Adawi — Washington State University. This project was created for academic purposes as part of the DATA 424 Senior Capstone. The CDC PLACES data is publicly available from the Centers for Disease Control and Prevention. All analysis and visualizations are original work.*
+*© 2026 Waleed Adawi — Washington State University. This project was created for academic purposes as part of the DATA 424 Senior Capstone. The CDC PLACES data is publicly available from the Centers for Disease Control and Prevention. All analysis and visualizations are original work.*
