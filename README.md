@@ -92,7 +92,7 @@ The five strongest correlations are:
 1. **High blood pressure ↔ Diabetes** (r = 0.88) — The strongest relationship in the dataset. Tracts where blood pressure is high almost always have elevated diabetes as well.
 2. **Smoking ↔ Physical inactivity** (r = 0.87) — Unhealthy behaviors cluster together. Where smoking rates are high, physical inactivity tends to be high too.
 3. **Obesity ↔ Smoking** (r = 0.83) — Another behavior-outcome link showing that lifestyle risk factors reinforce each other geographically.
-4. **Physical inactivity ↔ Lack of insurance** (r = 0.82) — Access barriers and health behaviors are intertwined. Communities with less insurance coverage also tend to have higher inactivity.
+4. **Physical inactivity ↔ Lack of insurance** (r = 0.81) — Access barriers and health behaviors are intertwined. Communities with less insurance coverage also tend to have higher inactivity.
 5. **Obesity ↔ Physical inactivity** (r = 0.81) — The most intuitive pairing: where people are less active, obesity prevalence is higher.
 
 ### Key Relationships Visualized
@@ -130,7 +130,7 @@ The data tells a consistent story across every analysis method used:
 
 **Unhealthy behaviors cluster in the same communities.** Smoking and physical inactivity are strongly correlated (r = 0.87), and both predict the presence of chronic disease outcomes. This means prevention efforts targeting just one behavior may have ripple effects on others.
 
-**Access barriers amplify the problem.** Lack of health insurance is correlated with physical inactivity (r = 0.82), which in turn predicts obesity and diabetes. Communities without insurance access are not just uninsured — they are also less likely to be physically active and more likely to have chronic conditions.
+**Access barriers amplify the problem.** Lack of health insurance is correlated with physical inactivity (r = 0.81), which in turn predicts obesity and diabetes. Communities without insurance access are not just uninsured — they are also less likely to be physically active and more likely to have chronic conditions.
 
 **Geography matters.** Rural eastern Washington and coastal counties consistently show higher prevalence across nearly every indicator. This is not random; it reflects structural factors like distance to healthcare, economic conditions, and demographic composition.
 
@@ -154,7 +154,7 @@ Based on the findings, the following actions are recommended for public health p
 
 3. **Address behavior clusters, not individual behaviors.** Smoking and physical inactivity are so strongly correlated (r = 0.87) that programs addressing one should incorporate the other. A physical activity program in a high-smoking community, for example, may have compounding benefits.
 
-4. **Expand insurance access in high-risk areas.** The strong correlation between lack of insurance and physical inactivity (r = 0.82) suggests that improving access to coverage could have downstream effects on health behaviors and outcomes.
+4. **Expand insurance access in high-risk areas.** The strong correlation between lack of insurance and physical inactivity (r = 0.81) suggests that improving access to coverage could have downstream effects on health behaviors and outcomes.
 
 5. **Use tract-level data for resource allocation.** County-level averages mask enormous within-county variation. The interactive Shiny map and this dataset give decision-makers the resolution they need to allocate resources precisely.
 
