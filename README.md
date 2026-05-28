@@ -58,6 +58,12 @@ A horizontal bar chart of the top 15 counties by mean diabetes prevalence (avera
 
 Three side-by-side histograms showing the tract-level distribution of diabetes, obesity, and high blood pressure prevalence across all Washington census tracts. Vertical dashed lines mark the statewide median for each measure. Diabetes shows a right-skewed distribution with a long tail extending above 18%, indicating a subset of tracts with substantially elevated estimated rates. Obesity and BP follow roughly normal distributions but with notable right shoulders. These distributions informed the threshold-setting logic in the Shiny app's slider controls.
 
+### Fig 5 — Diabetes Prevalence by Census Tract (Static Map)
+
+![Diabetes Map](outputs/fig5_wa_diabetes_map.png)
+
+A geographic scatter plot showing diabetes crude prevalence for every census tract in Washington State, colored on a continuous gradient from light yellow (~4%) to deep crimson (~14%+). Each dot represents one census tract positioned at its centroid. High-prevalence tracts cluster visibly in central and eastern Washington — particularly in Yakima, Grant, Franklin, and Adams counties — while the Puget Sound metro area shows consistently lower rates. Outlier rural tracts (Okanogan 14.4%, Ferry 15.6%, Pacific 15.0%, Wahkiakum 13.8%, Garfield 13.2%) are annotated. This static view complements the interactive Shiny application by providing a publication-ready snapshot of the same geographic pattern users can explore dynamically.
+
 ---
 
 ## Interactive Shiny Application
@@ -128,7 +134,7 @@ shiny-app/app.R
 ```
 chronic-disease-mapping-wa/
 ├── README.md
-├── eda_analysis.py              # Python EDA → 4 figures + 2 CSVs
+├── eda_analysis.py              # Python EDA → 5 figures + 2 CSVs
 ├── requirements.txt             # Python dependencies
 ├── data/
 │   ├── places_wa_clean.csv      # CDC PLACES 2024 (WA tracts, ~1,770 rows)
@@ -138,6 +144,7 @@ chronic-disease-mapping-wa/
 │   ├── fig2_scatterplot_grid.png
 │   ├── fig3_county_diabetes_ranking.png
 │   ├── fig4_outcome_distributions.png
+│   ├── fig5_wa_diabetes_map.png
 │   ├── correlation_matrix.csv
 │   └── county_averages.csv
 ├── shiny-app/
